@@ -146,3 +146,26 @@ button:hover{
     right:2px;
     border:2px solid white;
 }
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    padding:12px 0;
+    box-shadow:0 -5px 20px rgba(0,0,0,0.1);
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.nav-item{
+    font-size:16px;
+    color:gray;
+    font-weight:bold;
+}
+
+.nav-item.active{
+    color:#d8b13b;
+}
