@@ -1,1 +1,10 @@
-
+customer-care-manager/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── assets/
+    ├── logo.png
+    ├── admin.png
+    └── background.jpg
