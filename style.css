@@ -1,5 +1,95 @@
-body{
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#efe6c5,#f5f5f5);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.hero{
+    width:100%;
+    max-width:430px;
+}
+
+.profile{
+    margin-bottom:20px;
+}
+
+.profile img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+
+h1{
+    font-size:48px;
+    font-weight:bold;
+    color:#111;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#666;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.card{
+    background:white;
+    border-radius:30px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.admin{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.admin img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.admin h3{
+    font-size:22px;
+}
+
+.admin small{
+    color:gray;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+button{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    background:#d8b13b;
+    color:#000;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
 }
