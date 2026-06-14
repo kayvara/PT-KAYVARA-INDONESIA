@@ -124,3 +124,25 @@ button:hover{
     }
 
 }
+.avatar{
+    position:relative;
+    width:60px;
+    height:60px;
+}
+
+.avatar img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.online{
+    width:14px;
+    height:14px;
+    background:#2ecc71;
+    border-radius:50%;
+    position:absolute;
+    bottom:2px;
+    right:2px;
+    border:2px solid white;
+}
