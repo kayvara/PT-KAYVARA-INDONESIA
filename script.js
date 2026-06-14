@@ -1,12 +1,16 @@
 const chatButton = document.getElementById("chatButton");
+const loading = document.getElementById("loading");
 
+// tombol chat utama
 chatButton.addEventListener("click", function () {
-    window.open("https://direct.lc.chat/19779830", "_blank");
-});
-const chatButton = document.getElementById("chatButton");
 
-chatButton.addEventListener("click", function () {
-    window.open("https://direct.lc.chat/19779830", "_blank");
+    loading.classList.remove("hidden");
+
+    setTimeout(() => {
+        window.open("https://direct.lc.chat/19779830", "_blank");
+        loading.classList.add("hidden");
+    }, 2500);
+
 });
 
 
