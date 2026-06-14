@@ -5,6 +5,7 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* ================= BODY ================= */
 body{
     background:linear-gradient(180deg,#efe6c5,#f5f5f5);
     min-height:100vh;
@@ -12,13 +13,17 @@ body{
     justify-content:center;
     align-items:center;
     padding:20px;
+    padding-bottom:90px; /* supaya tidak ketutup navbar */
 }
 
+/* ================= HERO ================= */
 .hero{
     width:100%;
     max-width:430px;
+    animation:fadeIn 0.8s ease-in-out;
 }
 
+/* ================= PROFILE ================= */
 .profile{
     margin-bottom:20px;
 }
@@ -29,6 +34,7 @@ body{
     border-radius:50%;
 }
 
+/* ================= TEXT ================= */
 h1{
     font-size:48px;
     font-weight:bold;
@@ -43,13 +49,20 @@ h1{
     margin-bottom:30px;
 }
 
+/* ================= CARD ================= */
 .card{
     background:white;
     border-radius:30px;
     padding:25px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:0.3s;
 }
 
+.card:hover{
+    transform:translateY(-3px);
+}
+
+/* ================= ADMIN ================= */
 .admin{
     display:flex;
     align-items:center;
@@ -71,12 +84,7 @@ h1{
     color:gray;
 }
 
-.card p{
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:25px;
-}
-
+/* ================= BUTTON ================= */
 button{
     width:100%;
     padding:18px;
@@ -87,43 +95,19 @@ button{
     font-size:22px;
     font-weight:bold;
     cursor:pointer;
-    transition:.3s;
+    transition:0.3s;
+    box-shadow:0 10px 20px rgba(216,177,59,0.3);
 }
 
 button:hover{
     transform:scale(1.03);
 }
-@media (max-width: 768px) {
 
-    h1{
-        font-size:40px;
-    }
-
-    .hero{
-        padding:10px;
-    }
-
-    .card{
-        padding:20px;
-    }
-
-    button{
-        font-size:18px;
-    }
-
+button:active{
+    transform:scale(0.97);
 }
 
-@media (min-width: 769px){
-
-    .hero{
-        max-width:600px;
-    }
-
-    h1{
-        font-size:60px;
-    }
-
-}
+/* ================= AVATAR ONLINE ================= */
 .avatar{
     position:relative;
     width:60px;
@@ -146,6 +130,8 @@ button:hover{
     right:2px;
     border:2px solid white;
 }
+
+/* ================= NAVBAR ================= */
 .bottom-nav{
     position:fixed;
     bottom:0;
@@ -169,20 +155,8 @@ button:hover{
 .nav-item.active{
     color:#d8b13b;
 }
-.hero{
-    animation:fadeIn 0.8s ease-in-out;
-}
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(20px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
+/* ================= LOADING ================= */
 .loading{
     position:fixed;
     top:0;
@@ -212,11 +186,58 @@ button:hover{
     margin-bottom:20px;
 }
 
+.loading p{
+    font-size:18px;
+}
+
+/* ================= ANIMATION ================= */
+.hero{
+    animation:fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
 @keyframes spin{
     0%{transform:rotate(0deg);}
     100%{transform:rotate(360deg);}
 }
 
-.loading p{
-    font-size:18px;
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px){
+
+    h1{
+        font-size:40px;
+    }
+
+    .hero{
+        padding:10px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    button{
+        font-size:18px;
+    }
+}
+
+@media (min-width: 769px){
+
+    .hero{
+        max-width:600px;
+    }
+
+    h1{
+        font-size:60px;
+    }
 }
